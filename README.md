@@ -18,7 +18,7 @@ removing, and marking them as completed, with tasks stored persistently in a JSO
 ## Installation
 1. Clone the repository:
    ```bash
-   https://github.com/R0hit-Yadav/Rust_CLI_Applications.git
+   git clone https://github.com/R0hit-Yadav/Rust_CLI_Applications.git
    cd all_applications
 
 ## Dependencies
