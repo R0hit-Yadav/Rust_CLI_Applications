@@ -34,8 +34,7 @@ removing, and marking them as completed, with tasks stored persistently in a JSO
 - Task data is stored persistently in `tasks.json`.
 
 ## Commands to run 
-- Add Task 
-``` bush cargo run -- add "project name" 10-01-2025 ```
+- Add Task ```cargo run -- add "project name" 10-01-2025 ```
 
 
 
