@@ -1,5 +1,6 @@
 mod to_do_list;
 mod time_tracker;
+mod notbook;
 
 use std::io;
 fn main() {
@@ -7,6 +8,7 @@ fn main() {
     println!("Chose one of CLI applications");
     println!("1.TO-DO LIST MANAGER");
     println!("2.TIME TRACKER");
+    println!("3.CLI NOTEBOOK");
 
 
     let mut input=String::new();
@@ -16,6 +18,7 @@ fn main() {
     {                                                       
         "1" => {to_do_list::main();}
         "2" => {time_tracker::main();}
+        "3" => {notbook::main();}
         _=>{println!("Enter valid input");}
         
     }

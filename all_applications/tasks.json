@@ -4,5 +4,11 @@
     "title": "mission 1.0",
     "due_date": "11-01-2025",
     "completed": false
+  },
+  {
+    "id": 2,
+    "title": "New Project",
+    "due_date": "15-01-2025",
+    "completed": false
   }
 ]
