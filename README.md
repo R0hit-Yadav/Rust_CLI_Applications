@@ -8,7 +8,7 @@ CLI_Applications
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/todo-manager.git
+   git clone https://github.com/R0hit-Yadav/Rust_CLI_Applications.git
    cd all_applications
 
 ## Dependencies
