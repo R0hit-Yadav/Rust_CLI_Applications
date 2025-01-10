@@ -35,7 +35,7 @@ removing, and marking them as completed, with tasks stored persistently in a JSO
 
 ## Commands to run 
 - Add Task 
-``` bush cargo run -- add "project name" 10-01-2025
+``` bush cargo run -- add "project name" 10-01-2025 ```
 
 
 
