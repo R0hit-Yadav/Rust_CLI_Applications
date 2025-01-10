@@ -12,13 +12,13 @@ CLI_Applications
    cd all_applications
 
 ## Dependencies
-<b>clap</b> for parsing command-line arguments.
+<b>clap -></b> for parsing command-line arguments.
 
-<b>serde</b> for serializing and deserializing JSON data.
+<b>serde -></b> for serializing and deserializing JSON data.
 
-<b>serde_json</b> for working with JSON.
+<b>serde_json -></b> for working with JSON.
 
-<b>chrono</b> for date validation.
+<b>chrono -></b> for date validation.
 
 
 
@@ -41,7 +41,6 @@ removing, and marking them as completed, with tasks stored persistently in a JSO
 
 
 
-
 # 2.Time Tracker
 A simple CLI-based time tracker application written in Rust. This tool allows you to track tasks, 
 log their start and stop times, and generate a detailed report of all recorded tasks.
@@ -52,6 +51,11 @@ log their start and stop times, and generate a detailed report of all recorded t
 - Generate a report of all tasks, including task names, start times, end times, and durations.
 - Tasks are stored persistently in a JSON file (`time_tracker.json`).
 
+## Commands to run 
+- Task Start         ```cargo run -- start "project name"```
+- Task Stop        ```cargo run -- stop```
+- Task Report     ```cargo run -- report```
+
 
 # 3.CLI-Notebook
 A simple CLI-based note-taking application written in Rust. This tool allows you to add, view, delete, and list notes, which are stored persistently in a JSON file.
@@ -61,3 +65,10 @@ A simple CLI-based note-taking application written in Rust. This tool allows you
 - View a specific note by its title.
 - Delete a note by its title.
 - List all existing notes.
+
+
+## Commands to run 
+- Add Note        ```cargo run -- add --title "title of notebook" ```
+- View Note       ```cargo run -- view --title "title of notebook"```
+- Remove Note     ```cargo run -- delete --title "title of notebook"```
+- List Of Notes   ```cargo run -- list```
