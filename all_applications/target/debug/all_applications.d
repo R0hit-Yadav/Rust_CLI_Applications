@@ -1,1 +1,1 @@
-D:\GITHUB\Rust_CLI_Applications\all_applications\target\debug\all_applications.exe: D:\GITHUB\Rust_CLI_Applications\all_applications\src\main.rs D:\GITHUB\Rust_CLI_Applications\all_applications\src\to_do_list.rs
+D:\GITHUB\Rust_CLI_Applications\all_applications\target\debug\all_applications.exe: D:\GITHUB\Rust_CLI_Applications\all_applications\src\main.rs D:\GITHUB\Rust_CLI_Applications\all_applications\src\time_tracker.rs D:\GITHUB\Rust_CLI_Applications\all_applications\src\to_do_list.rs
