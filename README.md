@@ -22,7 +22,11 @@ removing, and marking them as completed, with tasks stored persistently in a JSO
    cd all_applications
 
 ## Dependencies
-<b>clap</b> for parsing command-line arguments.
-<b>serde</b> for serializing and deserializing JSON data.
-<b>serde_json</b> for working with JSON.
-<b>chrono</b> for date validation.
+<b>clap</b>- for parsing command-line arguments.
+
+<b>serde</b>- for serializing and deserializing JSON data.
+
+<b>serde_json</b>- for working with JSON.
+
+<b>chrono</b>- for date validation.
+
