@@ -50,7 +50,7 @@ fn main() {
         "4" => 
         {
             println!("Commands to Run: ");
-            println!("2. WEATHER OF CITY:       cargo run -- city 'city name'");
+            println!("2. WEATHER OF CITY:       cargo run --city 'city name'");
             weather::main();
         }
         _=>{println!("Enter valid input");}
