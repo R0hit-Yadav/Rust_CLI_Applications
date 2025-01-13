@@ -2,7 +2,6 @@ mod to_do_list;
 mod time_tracker;
 mod notbook;
 mod weather;
-
 use std::io;
 fn main() {
 

@@ -57,7 +57,7 @@ fn load_tasks() -> Vec<Task> {
         Err(_) => return vec![],
     };
 
-    let mut data = String::new();
+    let mut data = String::new(); 
     file.read_to_string(&mut data).unwrap();
     serde_json::from_str(&data).unwrap_or_else(|_| vec![])
 }
