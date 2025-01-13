@@ -22,9 +22,21 @@ CLI_Applications
 
 
 
+
 # 1.TO-DO-LIST 
-A simple CLI-based to-do list manager built with Rust. This application allows you to manage tasks by adding, listing, 
-removing, and marking them as completed, with tasks stored persistently in a JSON file.
+This program is a command-line interface (CLI) application for managing a to-do list. It allows users to add tasks, list all tasks, mark tasks as completed, and remove tasks. The tasks are stored persistently in a JSON file named tasks.json.
+
+## Imports
+``use clap::{Parser, Subcommand};``
+Provides a convenient way to define and parse CLI arguments.
+``use serde::{Deserialize, Serialize};``
+Enables serialization (saving to JSON) and deserialization (loading from JSON) of data structures.
+``use std::fs::File;``
+Used for reading and writing files.
+``use std::io::{Read, Write};``
+Used for file I/O operations.
+``use chrono::NaiveDate;``
+Provides date parsing and validation.
 
 ## Features
 - Add new tasks with a title and due date.
@@ -65,6 +77,23 @@ A simple CLI-based note-taking application written in Rust. This tool allows you
 - View a specific note by its title.
 - Delete a note by its title.
 - List all existing notes.
+
+
+## Commands to run 
+- Add Note        ```cargo run -- add --title "title of notebook" ```
+- View Note       ```cargo run -- view --title "title of notebook"```
+- Remove Note     ```cargo run -- delete --title "title of notebook"```
+- List Of Notes   ```cargo run -- list```
+
+
+
+
+
+# 3.Weather API
+Weather CLI application that fetches weather information for a given city using the OpenWeatherMap API
+
+## Features
+
 
 
 ## Commands to run 
