@@ -29,12 +29,16 @@ This program is a command-line interface (CLI) application for managing a to-do 
 ## Imports
 ``use clap::{Parser, Subcommand};``
 Provides a convenient way to define and parse CLI arguments.
+
 ``use serde::{Deserialize, Serialize};``
 Enables serialization (saving to JSON) and deserialization (loading from JSON) of data structures.
+
 ``use std::fs::File;``
 Used for reading and writing files.
+
 ``use std::io::{Read, Write};``
 Used for file I/O operations.
+
 ``use chrono::NaiveDate;``
 Provides date parsing and validation.
 
@@ -54,8 +58,8 @@ Provides date parsing and validation.
 
 
 # 2.Time Tracker
-A simple CLI-based time tracker application written in Rust. This tool allows you to track tasks, 
-log their start and stop times, and generate a detailed report of all recorded tasks.
+This Rust program implements a command-line time tracker. It allows you to start a task, stop the currently running task, and generate a report of all tasks. The program uses the clap crate for command-line argument parsing, the chrono crate for date and time handling, and the serde crate for serialization and deserialization of data.
+
 
 ## Features
 - Start tracking a new task.
@@ -70,7 +74,7 @@ log their start and stop times, and generate a detailed report of all recorded t
 
 
 # 3.CLI-Notebook
-A simple CLI-based note-taking application written in Rust. This tool allows you to add, view, delete, and list notes, which are stored persistently in a JSON file.
+This program is a command-line interface (CLI) application for a note-taking application called CLI Notebook, written in Rust. It allows users to perform actions such as adding, viewing, deleting, and listing notes.
 
 ## Features
 - Add new notes with a title and content.
@@ -92,12 +96,13 @@ A simple CLI-based note-taking application written in Rust. This tool allows you
 # 3.Weather API
 Weather CLI application that fetches weather information for a given city using the OpenWeatherMap API
 
-## Features
+## Imports
+``clap::Parser``: This is a command-line argument parsing library. It simplifies fetching user-provided inputs via the CLI.
 
+``serde::Deserialize``: serde is used for serializing and deserializing data. Here, it’s used to convert JSON responses from the API into Rust structs.
+
+``std::error::Error``: A trait for defining errors. This allows functions to return errors in a standardized way.
 
 
 ## Commands to run 
-- Add Note        ```cargo run -- add --title "title of notebook" ```
-- View Note       ```cargo run -- view --title "title of notebook"```
-- Remove Note     ```cargo run -- delete --title "title of notebook"```
-- List Of Notes   ```cargo run -- list```
+- get weather of city : `cargo run -- --city "Ahmedabad"`
