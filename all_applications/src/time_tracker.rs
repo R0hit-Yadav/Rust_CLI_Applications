@@ -32,12 +32,6 @@ struct Task {
 const FILE_NAME: &str = "time_tracker.json";
 
 pub fn main() {
-    // Display available commands
-    println!("Commands to Run: ");
-    println!("1. TASK START:        cargo run -- start 'Project Name'");
-    println!("2. TASK STOP:         cargo run -- stop");
-    println!("3. TASK REPORT:       cargo run -- report");
-    println!("");
 
     // Parse the CLI arguments
     let cli = Cli::parse();

@@ -42,13 +42,7 @@ struct Note {
 const FILE_NAME: &str = "notes.json";
 
 pub fn main() {
-    // Display available commands
-    println!("Commands to Run: ");
-    println!("1. ADD NOTE:        cargo run -- add --title 'title of notebook' --content 'content of notebook'");
-    println!("2. VIEW NOTE:       cargo run -- view --title 'title name'");
-    println!("3. DELETE NOTE:     cargo run -- delete --title 'title name'");
-    println!("4. LIST OF NOTES:   cargo run -- list");
-    println!("");
+   
 
     // Parse the CLI arguments
     let cli = Cli::parse();

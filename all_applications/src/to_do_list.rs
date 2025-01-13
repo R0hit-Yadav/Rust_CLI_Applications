@@ -34,13 +34,6 @@ struct Task {
 const FILE_NAME: &str = "tasks.json";  // File to store all tasks
 
 pub fn main() {
-    // Display available commands   
-    println!("Commands to Run: ");
-    println!("1. ADD TASK:          cargo run -- add 'Project Name' 10-01-2025");
-    println!("2. LIST TASK:         cargo run -- list");
-    println!("3. REMOVE TASK:       cargo run -- remove 1");
-    println!("4. COMPLETE TASK:     cargo run -- complete 1");
-    println!("");
 
     // Parse the CLI arguments
     let cli = Cli::parse();
