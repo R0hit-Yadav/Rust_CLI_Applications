@@ -100,7 +100,7 @@ fn view_note(title: String) {
     }
 }
 
-// Delete a note by title
+// Delete a note by  title
 fn delete_note(title: String) {
     let mut notes = load_notes();
 

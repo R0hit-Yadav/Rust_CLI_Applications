@@ -6,7 +6,7 @@ use std::error::Error;
 #[command(name = "Weather CLI")]
 #[command(about = "Fetches and displays weather information for a given city.")]
 struct Cli {
-    /// The city to fetch weather information for.
+    /// The city to fetch weather  information for.
     #[arg(short, long)]
     city: String,
 }

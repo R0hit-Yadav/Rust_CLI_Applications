@@ -31,7 +31,7 @@ struct Task {
     completed: bool,
 }
 
-const FILE_NAME: &str = "tasks.json";  // File to store all tasks
+const FILE_NAME: &str = "tasks.json";  // File to store all task
 
 pub fn main() {
 
