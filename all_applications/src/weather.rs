@@ -2,7 +2,6 @@ use clap::Parser;
 use serde::Deserialize;
 use std::error::Error;
 
-/// A CLI Weather App to fetch current weather information.
 #[derive(Parser)]
 #[command(name = "Weather CLI")]
 #[command(about = "Fetches and displays weather information for a given city.")]
@@ -30,7 +29,7 @@ struct Weather {
     description: String,
 }
 
-const API_KEY: &str = "c09fd12e890863cd96b341ed1564ef2e"; // Replace with your API key
+const API_KEY: &str = "c09fd12e890863cd96b341ed1564ef2e"; //API key
 const BASE_URL: &str = "http://api.openweathermap.org/data/2.5/weather";
 
 #[tokio::main]
@@ -67,7 +66,7 @@ async fn fetch_weather(city: &str) -> Result<WeatherResponse, Box<dyn Error>> {
 
 fn display_weather(weather: WeatherResponse) {
     println!("Weather in {}:", weather.name);
-    println!("Temperature: {:.1}°C", weather.main.temp);
+    println!("Temperature: {:.2}°C", weather.main.temp);
     println!("Humidity: {}%", weather.main.humidity);
 
     if let Some(condition) = weather.weather.first() {
