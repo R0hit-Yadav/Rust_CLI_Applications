@@ -3,12 +3,36 @@
     "id": 1,
     "title": "mission 1.0",
     "due_date": "11-01-2025",
-    "completed": false
+    "completed": true
   },
   {
     "id": 2,
     "title": "New Project",
     "due_date": "15-01-2025",
+    "completed": true
+  },
+  {
+    "id": 3,
+    "title": "DEMO 1",
+    "due_date": "20-01-2025",
+    "completed": false
+  },
+  {
+    "id": 4,
+    "title": "New Task 4",
+    "due_date": "25-01-2025",
+    "completed": false
+  },
+  {
+    "id": 5,
+    "title": "hackathon 5.0",
+    "due_date": "29-01-2025",
+    "completed": false
+  },
+  {
+    "id": 6,
+    "title": "dotslah 8.0",
+    "due_date": "01-02-2025",
     "completed": false
   }
 ]

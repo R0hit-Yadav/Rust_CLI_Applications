@@ -34,7 +34,7 @@ struct Task {
 const FILE_NAME: &str = "tasks.json";  // File to store all tasks
 
 pub fn main() {
-    // Display available commands
+    // Display available commands   
     println!("Commands to Run: ");
     println!("1. ADD TASK:          cargo run -- add 'Project Name' 10-01-2025");
     println!("2. LIST TASK:         cargo run -- list");
